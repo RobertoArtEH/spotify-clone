@@ -1,6 +1,5 @@
-<template>
-  <spotify-layout>
-  </spotify-layout>
+<template lang="pug">
+SpotifyLayout
 </template>
 
 <script>

@@ -1,7 +1,9 @@
-<template>
-  <div class="bg-gray-900 w-screen h-screen">
-    <player></player>
-  </div>
+<template lang="pug">
+.bg-gray-darkest.w-screen.h-screen
+  .flex
+
+  .flex
+    Player
 </template>
 
 <script>
