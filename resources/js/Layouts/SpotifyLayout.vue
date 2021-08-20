@@ -1,15 +1,19 @@
 <template lang="pug">
-.bg-gray-darkest.w-screen.h-screen
+.bg-gray-darkest.w-screen.h-screen.grid.auto-cols-auto.grid-rows-1
   .flex
-
+    Sidebar
   .flex
     Player
 </template>
 
 <script>
 import Player from '@/Components/Player'
+import Sidebar from '@/Components/Sidebar'
 
 export default {
-  components: { Player }
+  components: {
+    Player,
+    Sidebar,
+  }
 }
 </script>
