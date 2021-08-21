@@ -17,10 +17,30 @@ aside.flex.gap-6.bg-black.flex-col.pt-6.px-4
           svg.mr-2(viewBox="0 0 512 512" width="24" height="24" xmlns="http://www.w3.org/2000/svg")
             path(d="M291.301 81.778l166.349 373.587-19.301 8.635-166.349-373.587zM64 463.746v-384h21.334v384h-21.334zM192 463.746v-384h21.334v384h-21.334z" fill="currentColor")
           span Your Library
+      li.text-white
+        a.no-underline.flex.items-center.p-3
+          span Your Playlists
+      hr
+      br
+      ul.space-y-4
+        li(v-for="playlist in playlists" :key="playlist.id").hover_text-red-400 {{playlist.title}}
+
+      
 </template>
 
 <script>
 export default {
+  data(){
+    return {
+      playlists : [
+        { id: 1, title: 'Playlist A'},
+        { id: 2, title: 'Playlist B'},
+        { id: 3, title: 'Playlist C'},
+        { id: 4, title: 'Playlist D'},
+        { id: 5, title: 'Playlist E'}
+      ]
+    }
+  }
   
 }
 </script>
