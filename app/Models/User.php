@@ -58,4 +58,17 @@ class User extends Authenticatable
     protected $appends = [
         'profile_photo_url',
     ];
+
+    public function playlists() {
+        return $this->hasMany(Playlist::class, 'user_id');
+    }
+
+    // public function playlists() {
+    //     return $this->belongsToMany(
+    //         Playlist::class,
+    //         'user_playlists',
+    //         'user_id',
+    //         'playlist_id'
+    //     );
+    // }
 }
