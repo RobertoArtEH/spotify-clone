@@ -1,471 +1,53 @@
-<template>
-    <div class="container ml-8">
-        <br>
-        <h3>Playlists Today</h3>
-        <br>
-    <div class="flex flex-wrap space-x-6">
-
-        <!-- Column -->
-        
-        <div class="my-1 px-1 w-25">
-
-            <!-- Article -->
-            <article class="overflow-hidden rounded-lg shadow-lg">
-
-                <a href="#">
-                    <img alt="Placeholder" class="block h-20 w-25" src="https://picsum.photos/600/400/?random">
-                </a>
-
-                <header class="flex items-center justify-between leading-tight p-2 md:p-4">
-                    <h1 class="text-base">
-                        <a class="no-underline hover:underline text-black" href="#">
-                            Playlist
-                        </a>
-                    </h1>
-                  
-                </header>
-
-                <footer class="flex items-center justify-between leading-none p-2 md:p-4">
-                    <a class="flex items-center no-underline hover:underline text-black" href="#">
-                        <p class="ml-2 text-sm">
-                            Descripción 
-                        </p>
-                    </a>
-                    <a class="no-underline text-grey-darker hover:text-red-dark" href="#">
-                        <span class="hidden">Like</span>
-                        <i class="fa fa-heart"></i>
-                    </a>
-                </footer>
-
-            </article>
-            <!-- END Article -->
-
-        </div>
-        <!-- END Column -->
-
-        <!-- Column -->
-        <div class="my-1 px-1 w-25">
-
-            <!-- Article -->
-            <article class="overflow-hidden rounded-lg shadow-lg">
-
-                <a href="#">
-                    <img alt="Placeholder" class="block h-20 w-25" src="https://picsum.photos/600/400/?random">
-                </a>
-
-                <header class="flex items-center justify-between leading-tight p-2 md:p-4">
-                    <h1 class="text-base">
-                        <a class="no-underline hover:underline text-black" href="#">
-                            Playlist
-                        </a>
-                    </h1>
-                  
-                </header>
-
-                <footer class="flex items-center justify-between leading-none p-2 md:p-4">
-                    <a class="flex items-center no-underline hover:underline text-black" href="#">
-                        <p class="ml-2 text-sm">
-                            Descripción 
-                        </p>
-                    </a>
-                    <a class="no-underline text-grey-darker hover:text-red-dark" href="#">
-                        <span class="hidden">Like</span>
-                        <i class="fa fa-heart"></i>
-                    </a>
-                </footer>
-
-            </article>
-            <!-- END Article -->
-
-        </div>
-        <!-- END Column -->
-
-        <!-- Column -->
-        <div class="my-1 px-1 w-25">
-
-            <!-- Article -->
-            <article class="overflow-hidden rounded-lg shadow-lg">
-
-                <a href="#">
-                    <img alt="Placeholder" class="block h-20 w-25" src="https://picsum.photos/600/400/?random">
-                </a>
-
-                <header class="flex items-center justify-between leading-tight p-2 md:p-4">
-                    <h1 class="text-base">
-                        <a class="no-underline hover:underline text-black" href="#">
-                            Playlist
-                        </a>
-                    </h1>
-                   
-                </header>
-
-                <footer class="flex items-center justify-between leading-none p-2 md:p-4">
-                    <a class="flex items-center no-underline hover:underline text-black" href="#">
-                        <p class="ml-2 text-sm">
-                            Descripción 
-                        </p>
-                    </a>
-                    <a class="no-underline text-grey-darker hover:text-red-dark" href="#">
-                        <span class="hidden">Like</span>
-                        <i class="fa fa-heart"></i>
-                    </a>
-                </footer>
-
-            </article>
-            <!-- END Article -->
-
-        </div>
-        <!-- END Column -->
-
-        <!-- Column -->
-        <div class="my-1 px-1 w-25">
-
-            <!-- Article -->
-            <article class="overflow-hidden rounded-lg shadow-lg">
-
-                <a href="#">
-                    <img alt="Placeholder" class="block h-20 w-25" src="https://picsum.photos/600/400/?random">
-                </a>
-
-                <header class="flex items-center justify-between leading-tight p-2 md:p-4">
-                    <h1 class="text-base">
-                        <a class="no-underline hover:underline text-black" href="#">
-                            Playlist
-                        </a>
-                    </h1>
-                    
-                </header>
-
-                <footer class="flex items-center justify-between leading-none p-2 md:p-4">
-                    <a class="flex items-center no-underline hover:underline text-black" href="#">
-                        <p class="ml-2 text-sm">
-                            Descripción 
-                        </p>
-                    </a>
-                    <a class="no-underline text-grey-darker hover:text-red-dark" href="#">
-                        <span class="hidden">Like</span>
-                        <i class="fa fa-heart"></i>
-                    </a>
-                </footer>
-
-            </article>
-            <!-- END Article -->
-
-        </div>
-        <!-- END Column -->
-
-        <!-- Column -->
-        <div class="my-1 px-1 w-25">
-
-            <!-- Article -->
-            <article class="overflow-hidden rounded-lg shadow-lg">
-
-                <a href="#">
-                    <img alt="Placeholder" class="block h-20 w-25" src="https://picsum.photos/600/400/?random">
-                </a>
-
-                <header class="flex items-center justify-between leading-tight p-2 md:p-4">
-                    <h1 class="text-base">
-                        <a class="no-underline hover:underline text-black" href="#">
-                            Playlist
-                        </a>
-                    </h1>
-                   
-                </header>
-
-                <footer class="flex items-center justify-between leading-none p-2 md:p-4">
-                    <a class="flex items-center no-underline hover:underline text-black" href="#">
-                        <p class="ml-2 text-sm">
-                            Descripción 
-                        </p>
-                    </a>
-                    <a class="no-underline text-grey-darker hover:text-red-dark" href="#">
-                        <span class="hidden">Like</span>
-                        <i class="fa fa-heart"></i>
-                    </a>
-                </footer>
-
-            </article>
-            <!-- END Article -->
-
-        </div>
-        <!-- END Column -->
-
-        <!-- Column -->
-        <div class="my-1 px-1 w-25">
-
-            <!-- Article -->
-            <article class="overflow-hidden rounded-lg shadow-lg">
-
-                <a href="#">
-                    <img alt="Placeholder" class="block h-20 w-full" src="https://picsum.photos/600/400/?random">
-                </a>
-
-                <header class="flex items-center justify-between leading-tight p-2 md:p-4">
-                    <h3 class="text-base">
-                        <a class="no-underline hover:underline text-black" href="#">
-                            Playlist
-                        </a>
-                    </h3>
-                    
-                </header>
-
-                <footer class="flex items-center justify-between leading-none p-2 md:p-4">
-                    <a class="flex items-center no-underline hover:underline text-black" href="#">
-                        <p class="ml-2 text-sm">
-                            Descripción 
-                        </p>
-                    </a>
-                    <a class="no-underline text-grey-darker hover:text-red-dark" href="#">
-                        <span class="hidden">Like</span>
-                        <i class="fa fa-heart"></i>
-                    </a>
-                </footer>
-
-            </article>
-            <!-- END Article -->
-
-        </div>
-        <!-- END Column -->
-
-    </div>
-    <br>
-    <h3>Playlists Today</h3>
-    <br>
-    <div class="flex flex-wrap space-x-6">
-
-        <!-- Column -->
-        
-        <div class="my-1 px-1 w-25">
-
-            <!-- Article -->
-            <article class="overflow-hidden rounded-lg shadow-lg">
-
-                <a href="#">
-                    <img alt="Placeholder" class="block h-20 w-25" src="https://picsum.photos/600/400/?random">
-                </a>
-
-                <header class="flex items-center justify-between leading-tight p-2 md:p-4">
-                    <h1 class="text-base">
-                        <a class="no-underline hover:underline text-black" href="#">
-                            Playlist
-                        </a>
-                    </h1>
-                  
-                </header>
-
-                <footer class="flex items-center justify-between leading-none p-2 md:p-4">
-                    <a class="flex items-center no-underline hover:underline text-black" href="#">
-                        <p class="ml-2 text-sm">
-                            Descripción 
-                        </p>
-                    </a>
-                    <a class="no-underline text-grey-darker hover:text-red-dark" href="#">
-                        <span class="hidden">Like</span>
-                        <i class="fa fa-heart"></i>
-                    </a>
-                </footer>
-
-            </article>
-            <!-- END Article -->
-
-        </div>
-        <!-- END Column -->
-
-        <!-- Column -->
-        <div class="my-1 px-1 w-25">
-
-            <!-- Article -->
-            <article class="overflow-hidden rounded-lg shadow-lg">
-
-                <a href="#">
-                    <img alt="Placeholder" class="block h-20 w-25" src="https://picsum.photos/600/400/?random">
-                </a>
-
-                <header class="flex items-center justify-between leading-tight p-2 md:p-4">
-                    <h1 class="text-base">
-                        <a class="no-underline hover:underline text-black" href="#">
-                            Playlist
-                        </a>
-                    </h1>
-                  
-                </header>
-
-                <footer class="flex items-center justify-between leading-none p-2 md:p-4">
-                    <a class="flex items-center no-underline hover:underline text-black" href="#">
-                        <p class="ml-2 text-sm">
-                            Descripción 
-                        </p>
-                    </a>
-                    <a class="no-underline text-grey-darker hover:text-red-dark" href="#">
-                        <span class="hidden">Like</span>
-                        <i class="fa fa-heart"></i>
-                    </a>
-                </footer>
-
-            </article>
-            <!-- END Article -->
-
-        </div>
-        <!-- END Column -->
-
-        <!-- Column -->
-        <div class="my-1 px-1 w-25">
-
-            <!-- Article -->
-            <article class="overflow-hidden rounded-lg shadow-lg">
-
-                <a href="#">
-                    <img alt="Placeholder" class="block h-20 w-25" src="https://picsum.photos/600/400/?random">
-                </a>
-
-                <header class="flex items-center justify-between leading-tight p-2 md:p-4">
-                    <h1 class="text-base">
-                        <a class="no-underline hover:underline text-black" href="#">
-                            Playlist
-                        </a>
-                    </h1>
-                   
-                </header>
-
-                <footer class="flex items-center justify-between leading-none p-2 md:p-4">
-                    <a class="flex items-center no-underline hover:underline text-black" href="#">
-                        <p class="ml-2 text-sm">
-                            Descripción 
-                        </p>
-                    </a>
-                    <a class="no-underline text-grey-darker hover:text-red-dark" href="#">
-                        <span class="hidden">Like</span>
-                        <i class="fa fa-heart"></i>
-                    </a>
-                </footer>
-
-            </article>
-            <!-- END Article -->
-
-        </div>
-        <!-- END Column -->
-
-        <!-- Column -->
-        <div class="my-1 px-1 w-25">
-
-            <!-- Article -->
-            <article class="overflow-hidden rounded-lg shadow-lg">
-
-                <a href="#">
-                    <img alt="Placeholder" class="block h-20 w-25" src="https://picsum.photos/600/400/?random">
-                </a>
-
-                <header class="flex items-center justify-between leading-tight p-2 md:p-4">
-                    <h1 class="text-base">
-                        <a class="no-underline hover:underline text-black" href="#">
-                            Playlist
-                        </a>
-                    </h1>
-                    
-                </header>
-
-                <footer class="flex items-center justify-between leading-none p-2 md:p-4">
-                    <a class="flex items-center no-underline hover:underline text-black" href="#">
-                        <p class="ml-2 text-sm">
-                            Descripción 
-                        </p>
-                    </a>
-                    <a class="no-underline text-grey-darker hover:text-red-dark" href="#">
-                        <span class="hidden">Like</span>
-                        <i class="fa fa-heart"></i>
-                    </a>
-                </footer>
-
-            </article>
-            <!-- END Article -->
-
-        </div>
-        <!-- END Column -->
-
-        <!-- Column -->
-        <div class="my-1 px-1 w-25">
-
-            <!-- Article -->
-            <article class="overflow-hidden rounded-lg shadow-lg">
-
-                <a href="#">
-                    <img alt="Placeholder" class="block h-20 w-25" src="https://picsum.photos/600/400/?random">
-                </a>
-
-                <header class="flex items-center justify-between leading-tight p-2 md:p-4">
-                    <h1 class="text-base">
-                        <a class="no-underline hover:underline text-black" href="#">
-                            Playlist
-                        </a>
-                    </h1>
-                   
-                </header>
-
-                <footer class="flex items-center justify-between leading-none p-2 md:p-4">
-                    <a class="flex items-center no-underline hover:underline text-black" href="#">
-                        <p class="ml-2 text-sm">
-                            Descripción 
-                        </p>
-                    </a>
-                    <a class="no-underline text-grey-darker hover:text-red-dark" href="#">
-                        <span class="hidden">Like</span>
-                        <i class="fa fa-heart"></i>
-                    </a>
-                </footer>
-
-            </article>
-            <!-- END Article -->
-
-        </div>
-        <!-- END Column -->
-
-        <!-- Column -->
-        <div class="my-1 px-1 w-25">
-
-            <!-- Article -->
-            <article class="overflow-hidden rounded-lg shadow-lg">
-
-                <a href="#">
-                    <img alt="Placeholder" class="block h-20 w-full" src="https://picsum.photos/600/400/?random">
-                </a>
-
-                <header class="flex items-center justify-between leading-tight p-2 md:p-4">
-                    <h3 class="text-base">
-                        <a class="no-underline hover:underline text-black" href="#">
-                            Playlist
-                        </a>
-                    </h3>
-                    
-                </header>
-
-                <footer class="flex items-center justify-between leading-none p-2 md:p-4">
-                    <a class="flex items-center no-underline hover:underline text-black" href="#">
-                        <p class="ml-2 text-sm">
-                            Descripción 
-                        </p>
-                    </a>
-                    <a class="no-underline text-grey-darker hover:text-red-dark" href="#">
-                        <span class="hidden">Like</span>
-                        <i class="fa fa-heart"></i>
-                    </a>
-                </footer>
-
-            </article>
-            <!-- END Article -->
-
-        </div>
-        <!-- END Column -->
-
-    </div>
-    <br>
-    
-</div>
-       
+<template lang="pug">
+.container.ml-8.text-white
+    .my-4
+        h3.text-2xl.font-bold Welcome
+    .my-4
+        h3.text-2xl.font-bold Your playlists
+    .flex.flex-wrap.space-x-6
+        .my-1.px-1.w-25(v-for="playlist in playlists.user" :key="playlist.id")
+            Card(:info="playlist")
+
+    .my-4
+        h3.text-2xl.font-bold Made for you
+    .flex.flex-wrap.space-x-6
+        .my-1.px-1.w-25(v-for="i in playlists.public" :key="i.id")
+            article.overflow-hidden.rounded-lg.shadow-lg.bg-gray-dark.p-4.w-48
+                a(href="#")
+                    img.block.h-40.w-40.rounded-lg(alt="Placeholder" :src="i.image")
+
+                header.flex.items-center.justify-between.leading-tight.mt-4.mb-2
+                    h1.text-xl
+                        a.no-underline.no-underline.font-bold(href="#") {{ i.name }}
+
+                footer.flex.items-center.justify-between.leading-none
+                    a.flex.items-center.no-underline.no-underline(href="#")
+                        p.text-sm.break-words.line-clamp-2 {{ i.description }}
+
+    .my-4
+        h3.text-2xl.font-bold Made for you
+    .flex.flex-wrap.space-x-6.mb-8
+        .my-1.px-1.w-25(v-for="i in playlists.public" :key="i.id")
+            article.overflow-hidden.rounded-lg.shadow-lg.bg-gray-dark.p-4.w-48
+                a(href="#")
+                    img.block.h-40.w-40.rounded-lg(alt="Placeholder" :src="i.image")
+
+                header.flex.items-center.justify-between.leading-tight.mt-4.mb-2
+                    h1.text-xl
+                        a.no-underline.no-underline.font-bold(href="#") {{ i.name }}
+
+                footer.flex.items-center.justify-between.leading-none
+                    a.flex.items-center.no-underline.no-underline(href="#")
+                        p.text-sm.break-words.line-clamp-2 {{ i.description }}
 </template>
 
 <script>
+import Card from '@/Components/Card'
+
 export default {
-    
+    components: { Card },
+    props: {
+        playlists: Object,
+    },
 }
 </script>

@@ -1,5 +1,5 @@
 <template lang="pug">
-Carousel(:playlists="playlists")
+div
 </template>
 
 <script>
@@ -12,7 +12,7 @@ Carousel(:playlists="playlists")
       Carousel
     },
     props: {
-      playlists: Object,
+      view: String,
     },
   }
 </script>
