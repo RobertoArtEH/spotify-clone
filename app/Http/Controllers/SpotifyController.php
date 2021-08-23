@@ -20,9 +20,4 @@ class SpotifyController extends Controller
             ]
         ]);
     }
-
-    public function playlists()
-    {
-        return Inertia::render('Spotify/Home', []);
-    }
 }

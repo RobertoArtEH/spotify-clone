@@ -1,5 +1,5 @@
 <template lang="pug">
-Carousel(:playlists="playlists")
+Carousel(:playlists="playlists" v-if="playlists")
 </template>
 
 <script>

@@ -19,7 +19,8 @@ aside.flex.gap-6.bg-black.flex-col.pl-4.pr-12.pt-6
           span Your Library
       hr.mb-4
     ul.space-y-4
-      li(v-for="playlist in playlists" :key="playlist.id").hover_text-white {{ playlist.name }}
+      li(v-for="playlist in playlists" :key="playlist.id").hover_text-white
+        Link.line-clamp-1(:href="`/playlist/${playlist.id}`") {{ playlist.name }}
 </template>
 
 <script>

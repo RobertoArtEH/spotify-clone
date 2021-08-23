@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PlaylistController;
 use App\Http\Controllers\SpotifyController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
@@ -27,4 +28,4 @@ Route::middleware(['guest'])
 });
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/home', [SpotifyController::class, 'index'])->name('home');
-Route::middleware(['auth:sanctum', 'verified'])->get('/playlists', [SpotifyController::class, 'playlists'])->name('playlists');
+Route::middleware(['auth:sanctum', 'verified'])->get('/playlist/{id}', [PlaylistController::class, 'index']);
