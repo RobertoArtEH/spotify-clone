@@ -3,6 +3,8 @@ require('./bootstrap');
 import { createApp, h } from 'vue';
 import { createInertiaApp } from '@inertiajs/inertia-vue3';
 import { InertiaProgress } from '@inertiajs/progress';
+import mitt from 'mitt';
+
 import SpotifyLayout from './Layouts/SpotifyLayout'
 
 const appName = window.document.getElementsByTagName('title')[0]?.innerText || 'Laravel';
@@ -19,6 +21,8 @@ createInertiaApp({
         return page
     },
     setup({ el, app, props, plugin }) {
+        window.emitter = mitt();
+
         return createApp({ render: () => h(app, props) })
             .use(plugin)
             .mixin({ methods: { route } })
