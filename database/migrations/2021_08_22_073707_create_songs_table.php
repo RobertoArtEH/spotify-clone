@@ -19,6 +19,7 @@ class CreateSongsTable extends Migration
             $table->string('artist', 150);
             $table->string('album', 150);
             $table->string('duration', 150);
+            $table->string('file', 150);
             $table->timestamps();
         });
     }
