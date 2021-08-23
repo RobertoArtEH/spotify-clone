@@ -20,16 +20,18 @@ footer.flex.flex-1.items-center.bg-gray-dark.p-3
     .flex.flex-col.gap-1
       //- Buttons
       .flex.gap-4.justify-center
-        button.border-none.bg-transparent
+        button.border-none.bg-transparent(@click="previous")
           svg.fill-current.text-gray-lightest(role="img" height="16" width="16" viewBox="0 0 16 16")
             path(d="M13 2.5L5 7.119V3H3v10h2V8.881l8 4.619z")
-        button.border-white.rounded-full.bg-white.p-2
+        button.border-white.rounded-full.bg-white.p-2(@click="handlePlay")
           svg.fill-current.text-gray-dark(role="img" height="16" width="16" viewBox="0 0 16 16")
-            path(d="M3 2h3v12H3zm7 0h3v12h-3z")
-            //- path(d="M4.018 14L14.41 8 4.018 2z")
-        button.border-none.bg-transparent
+            path(v-if="playing" d="M3 2h3v12H3zm7 0h3v12h-3z")
+            path(v-else d="M4.018 14L14.41 8 4.018 2z")
+        button.border-none.bg-transparent(@click="next")
           svg.fill-current.text-gray-lightest(role="img" height="16" width="16" viewBox="0 0 16 16")
             path(d="M11 3v4.119L3 2.5v11l8-4.619V13h2V3z")
+        .hidden(v-if="currentSong != null")
+          audio(ref="audioPlayer" :src="playlist.songs[currentSong].file" preload controls)
 
       //- Progress bar
       .flex.items-center.gap-2.text-white
@@ -48,6 +50,12 @@ export default {
     return {
       playlist: null,
       currentSong: null,
+      playing: false,
+    }
+  },
+  computed: {
+    percenTime() {
+      // this.currentTime = this.$refs.audio.currentTime
     }
   },
   mounted() {
@@ -55,8 +63,46 @@ export default {
       this.playlist = data.playlist
       this.currentSong = data.index
 
-      console.log('this.playlist', this.playlist);
+      setTimeout(() => {
+        this.play()
+      }, 0)
     })
   },
+  methods: {
+    handlePlay() {
+      if (this.$refs.audioPlayer.paused) {
+        this.play()
+      } 
+      else {
+        this.pause()
+      }
+    },
+    play() {
+      this.$refs.audioPlayer.play()
+      this.playing = true
+    },
+    pause() {
+      this.$refs.audioPlayer.pause()
+      this.playing = false
+    },
+    next() {
+      if (typeof  this.playlist.songs[this.currentSong + 1] !== 'undefined') {
+        this.currentSong++
+        
+        setTimeout(() => {
+          this.play()
+        }, 0)
+      }
+    },
+    previous() {
+      if (typeof  this.playlist.songs[this.currentSong - 1] !== 'undefined') {
+        this.currentSong--
+        
+        setTimeout(() => {
+          this.play()
+        }, 0)
+      }
+    },
+  }
 }
 </script>

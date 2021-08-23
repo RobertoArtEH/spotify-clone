@@ -10,12 +10,14 @@ table.w-full.mt-12
       th Duration
   tbody
     tr.hover_cursor-pointer.hover_bg-gray-light(v-for="(song, index) in playlist.songs" :key="song.id")
-      td.p-3(@click="playSong(index)")
+      td.p-2(@click="playSong(index)")
         svg.h-6.fill-current.text-white(height="32" role="img" width="32" viewBox="0 0 24 24")
           polygon(points="21.57 12 5.98 3 5.98 21 21.57 12")
-      td {{ song.name }}
+      td.flex.items-center.py-3
+        img.h-8.w-8.mr-4(:src="song.image")
+        span {{ song.name }}
       td {{ song.artist }}
-      td {{ song.algum }}
+      td {{ song.album }}
       td May 25, 2021
       td {{ song.duration }}
 </template>

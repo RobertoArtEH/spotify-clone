@@ -7,7 +7,7 @@
         .ml-4
           h2.text-xl Playlist
           h1.text-8xl.font-bold.my-2 {{ playlist.name }}
-          p(v-if="playlist.user") {{ playlist.user.name }} - 15 songs
+          p(v-if="playlist.user") {{ playlist.user.name }} - {{ playlist.songs.length }} songs
 
       TableSongs(v-if="playlist.songs.length" :playlist="playlist")
 </template>
