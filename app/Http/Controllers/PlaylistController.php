@@ -10,7 +10,7 @@ class PlaylistController extends Controller
 {
     public function index($id)
     {
-        $playlist = Playlist::with('user')->find($id);
+        $playlist = Playlist::with(['user', 'songs'])->find($id);
 
         return Inertia::render('Spotify/Playlist', [
             'playlist' => $playlist
